@@ -14,24 +14,44 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<style>
+  .font-lexend{
+    font-family: "Lexend", sans-serif;
+  }
+</style>
 <script>
   tailwind.config = {
     theme: {
       extend: {
         colors: {
-          clifford: '#da373d',
-          clifford: '#da373d',
-          clifford: '#da373d',
-          clifford: '#da373d',
-          clifford: '#da373d',
+          primary: '#B4F461',
+          navClr: '#F9F7F3',
+
         },
-        fontFamily
-      }
-    }
+      },
+    },
   }
 </script>
 </head>
-<body>
+<body class="font-lexend">
+  <header class="container mx-auto ">
+    <div class="navbar bg-navClr lg:px-20 py-10">
+      <div class="navbar-start">
+        <button class="btn btn-primary bg-primary text-black px-3 lg:px-10 hover:bg-primary border-none">Blog</button> 
+      </div>
+      <div class="navbar-center lg:space-x-5">
+        <img class="hidden lg:block" src="./assets/logo.png" alt="">
+        <h3 class="lg:text-2xl font-bold">Donate Bangladesh</h3>
+      </div>
+      <div class="navbar-end space-x-2">
+        <img class="hidden lg:block" src="./assets/coin.png" alt="">
+        <div class="lg:text-2xl font-bold text-gray-400">5500 BDT</div>
+        </div>
+      </div>
+  </header>
+  <main>
+
+  </main>
   
 </body>
 </html>
